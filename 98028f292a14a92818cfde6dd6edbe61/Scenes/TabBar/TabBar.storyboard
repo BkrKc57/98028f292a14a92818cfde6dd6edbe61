@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="Lfy-17-r49">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="41F-e2-Vf3" customClass="TabBarViewController" customModule="_8028f292a14a92818cfde6dd6edbe61" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Gg-6X-abt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemBlueColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vVK-ej-R9R" kind="relationship" relationship="viewControllers" id="zrO-HA-b3p"/>
+                        <segue destination="deO-Gp-7R9" kind="relationship" relationship="viewControllers" id="zEs-8d-xV4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZv-VD-ozc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="-51"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="3P7-Qr-bkM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DashboardViewController" storyboardName="Dashboard" referencedIdentifier="DashboardViewController" id="vVK-ej-R9R" userLabel="Dashboard" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="İstasyon" image="airplane" catalog="system" id="zUz-z9-DAe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97T-3U-hW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="-205"/>
+        </scene>
+        <!--Favoriler-->
+        <scene sceneID="sPx-sR-Lmn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FavoritesViewController" storyboardName="Favorites" referencedIdentifier="FavoritesViewController" id="deO-Gp-7R9" userLabel="Favoriler" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favoriler" image="star.fill" catalog="system" id="y5n-KY-JjP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeL-TS-Ijd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="-22"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

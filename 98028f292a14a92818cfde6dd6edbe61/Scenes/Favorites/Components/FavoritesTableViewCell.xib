@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoritesTableViewCell" id="vjm-js-HT1" customClass="FavoritesTableViewCell" customModule="_8028f292a14a92818cfde6dd6edbe61" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vjm-js-HT1" id="mi5-5N-mtl">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ6-iG-jzI" customClass="BorderContainerView" customModule="_8028f292a14a92818cfde6dd6edbe61" customModuleProvider="target">
+                        <rect key="frame" x="32" y="16" width="350" height="88"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEK-mA-p6E" customClass="BaseButton" customModule="_8028f292a14a92818cfde6dd6edbe61" customModuleProvider="target">
+                                <rect key="frame" x="302" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ow8-q4-68F"/>
+                                    <constraint firstAttribute="height" constant="40" id="zHn-GF-6Y6"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="star.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zym-72-IbK">
+                                <rect key="frame" x="16" y="9" width="270" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1m-r6-n5K" customClass="BaseLabel" customModule="_8028f292a14a92818cfde6dd6edbe61" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcE-K9-XQj" customClass="BaseLabel" customModule="_8028f292a14a92818cfde6dd6edbe61" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="23.5" width="270" height="23"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNO-3x-qg2" customClass="BaseLabel" customModule="_8028f292a14a92818cfde6dd6edbe61" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="46.5" width="270" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="U05-8M-miQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CEK-mA-p6E" firstAttribute="leading" secondItem="zym-72-IbK" secondAttribute="trailing" constant="16" id="FhB-Wy-jIn"/>
+                            <constraint firstItem="zym-72-IbK" firstAttribute="centerY" secondItem="OJ6-iG-jzI" secondAttribute="centerY" id="Gvh-qY-DA5"/>
+                            <constraint firstItem="CEK-mA-p6E" firstAttribute="top" secondItem="OJ6-iG-jzI" secondAttribute="top" constant="8" id="Xkq-BX-pvY"/>
+                            <constraint firstItem="zym-72-IbK" firstAttribute="leading" secondItem="OJ6-iG-jzI" secondAttribute="leading" constant="16" id="at2-aI-7vc"/>
+                            <constraint firstAttribute="trailing" secondItem="CEK-mA-p6E" secondAttribute="trailing" constant="8" id="fPy-Az-bBX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OJ6-iG-jzI" secondAttribute="bottom" constant="16" id="DN2-cg-bn9"/>
+                    <constraint firstAttribute="trailing" secondItem="OJ6-iG-jzI" secondAttribute="trailing" constant="32" id="Ghe-Ul-a1s"/>
+                    <constraint firstItem="OJ6-iG-jzI" firstAttribute="top" secondItem="mi5-5N-mtl" secondAttribute="top" constant="16" id="HQ8-9e-0Ho"/>
+                    <constraint firstItem="OJ6-iG-jzI" firstAttribute="leading" secondItem="mi5-5N-mtl" secondAttribute="leading" constant="32" id="X2j-5l-Z6e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="capacityLabel" destination="FNO-3x-qg2" id="wf7-25-qAX"/>
+                <outlet property="containerView" destination="OJ6-iG-jzI" id="YTd-ep-ih0"/>
+                <outlet property="eusLabel" destination="bcE-K9-XQj" id="wg9-aU-Cnc"/>
+                <outlet property="favoriteButton" destination="CEK-mA-p6E" id="zRv-k6-nnH"/>
+                <outlet property="titleLabel" destination="P1m-r6-n5K" id="uPO-RI-W7B"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="94"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
